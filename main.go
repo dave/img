@@ -44,7 +44,7 @@ func run() {
 
 			// encode the image using the standard library jpeg package
 			buf := &bytes.Buffer{}
-			if err := jpeg.Encode(buf, img, &jpeg.Options{Quality: 50}); err != nil {
+			if err := jpeg.Encode(buf, img, &jpeg.Options{Quality: 80}); err != nil {
 				panic(err)
 			}
 
